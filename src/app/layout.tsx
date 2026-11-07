@@ -16,7 +16,10 @@ const maplestory = localFont({
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kimse0ng1l.github.io"),
+  // Vercel provides the production domain at build time.
+  metadataBase: new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000",
+  ),
   title: {
     default: "기니 키우기 — 기니피그 용사의 방치형 모험",
     template: "%s · 기니 키우기",

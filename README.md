@@ -1,7 +1,7 @@
 # 기니 키우기 웹사이트
 
 모바일 게임 「기니 키우기」의 소개 페이지와 개인정보처리방침·이용약관 페이지입니다.
-Next.js 정적 내보내기(`output: "export"`)로 만들고 GitHub Pages로 배포합니다.
+Next.js 정적 내보내기(`output: "export"`)로 만들고 Vercel로 배포합니다.
 
 - 소개: `/`
 - 개인정보처리방침: `/privacy-policy/`
@@ -17,8 +17,7 @@ npm run build    # out/ 에 정적 파일 생성
 
 ## 배포
 
-`main`에 푸시하면 `.github/workflows/deploy.yml`이 빌드해서 GitHub Pages에 올립니다
-(저장소 Settings → Pages → Source를 **GitHub Actions**로 설정해야 합니다).
+Vercel 프로젝트가 이 저장소와 연결되어 있어서 `main`에 푸시하면 자동으로 배포됩니다.
 
 ## 내용 수정
 

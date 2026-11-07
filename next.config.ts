@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
-// Static export: `next build` writes plain HTML/CSS/JS to out/, ready for any static host.
-// NEXT_PUBLIC_BASE_PATH is set by the GitHub Pages workflow ("/guinea_web"); empty locally
-// and on hosts that serve from the domain root.
+// Static export: every page is plain HTML built ahead of time (deployed on Vercel).
+// NEXT_PUBLIC_BASE_PATH stays empty there; set it only if the site is ever served from a
+// sub-path.
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {
