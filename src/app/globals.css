@@ -326,6 +326,34 @@ img {
   animation: pulse 1.8s ease-in-out infinite;
 }
 
+.hero__legal {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+.hero__legal a {
+  background: rgba(255, 249, 233, 0.92);
+  color: var(--line);
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+}
+.hero__legal a:hover {
+  background: var(--cream);
+  color: var(--green-dark);
+}
+.cta__legal {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+.cta__legal a {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
 @keyframes title-drop {
   0% {
     transform: translateY(-120px) scale(1, 1);

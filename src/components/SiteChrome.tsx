@@ -30,7 +30,7 @@ export function SiteFooter() {
           <span aria-hidden>·</span>
           <a href="mailto:kimsungil322@gmail.com">문의하기</a>
         </div>
-        <p className="site-footer__copy">© 2026 김성일 · 기니 키우기</p>
+        <p className="site-footer__copy">© 2026 「기니 키우기」 운영자</p>
       </div>
     </footer>
   );

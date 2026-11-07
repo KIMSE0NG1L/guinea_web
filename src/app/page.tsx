@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Sprite } from "@/components/Sprite";
 import { asset } from "@/lib/asset";
 
@@ -64,6 +65,10 @@ export default function Home() {
             <span className="store-badge">App Store · 출시 준비 중</span>
           </div>
           <p className="hero__soon outline-text">곧 만나요!</p>
+          <nav className="hero__legal" aria-label="약관과 정책">
+            <Link href="/privacy-policy/">개인정보처리방침</Link>
+            <Link href="/terms-of-service/">이용약관</Link>
+          </nav>
         </div>
       </section>
 
@@ -138,6 +143,9 @@ export default function Home() {
             <h2 className="section-title">출시 준비 중이에요</h2>
             <p>Google Play와 App Store에 곧 찾아갈게요. 궁금한 점은 언제든 메일로 보내 주세요.</p>
             <a className="game-button" href="mailto:kimsungil322@gmail.com">문의 메일 보내기</a>
+            <p className="cta__legal">
+              <Link href="/privacy-policy/">개인정보처리방침</Link> · <Link href="/terms-of-service/">이용약관</Link>
+            </p>
           </div>
         </div>
       </section>
